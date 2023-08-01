@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include=[
+    'cli',
+    'clients',
+    'helpers.click',
+    'helpers.snyk',
+    'models']
+
+[project]
+name="snyk_aggregated_fixes"
+version="0.0.1"
+dependencies=[
+    "click",
+    "requests",
+    "pysnyk",
+    "dataclasses-json",
+    "semver"
+]
+
+[project.scripts]
+snyk_agg_fixes = "cli.snyk_aggregated_fixes:snyk_agg_fixes"

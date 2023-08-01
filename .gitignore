@@ -1,0 +1,10 @@
+.idea
+dist
+results.json
+*.egg-info
+build
+*__pycache__*
+.DS_Store
+
+
+
